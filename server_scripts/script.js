@@ -12,6 +12,15 @@ ServerEvents.recipes(event => {
         D: 'kubejs:display_pannel'
     })
 
+    //incomplete screen frame
+    event.recipes.create.mechanical_crafting('kubejs:incomplete_screen_frame', [
+        ' SSS ',
+        ' S S ',
+        ' SSS ',
+        ], {
+        S: 'create:brass_sheet',
+    })
+
     //Mixing Recipes
 
     //bronze alloy
