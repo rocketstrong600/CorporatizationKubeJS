@@ -8,4 +8,5 @@ StartupEvents.registry('item', event => {
     event.create('display_pannel').displayName('Display Pannel').texture('kubejs:item/display_pannel')
     event.create('incomplete_display_pannel','create:sequenced_assembly').displayName('Incomplete Display Pannel').texture('kubejs:item/screen_frame')
 	event.create('glass_sheet').displayName('Glass Sheet').texture('kubejs:item/glass_sheet')
+	event.create('broken_glass').displayName('Broken Glass').texture('kubejs:item/broken_glass')
 })
