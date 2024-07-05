@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
 
     //Pressing Recipe
 
-    event.recipes.create.pressing([Item.of('kubejs:glass_sheet').withChance(0.25), 'minecraft:air'], 'minecraft:glass_pane')
+    event.recipes.create.pressing([Item.of('kubejs:glass_sheet').withChance(0.25), 'kubejs:broken_glass'], 'minecraft:glass_pane')
 
 
 
