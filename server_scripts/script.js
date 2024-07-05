@@ -19,8 +19,8 @@ ServerEvents.recipes(event => {
 
     //Pressing Recipe
 
-    event.recipes.create.pressing(Item.of('kubejs:glass_sheet').withChance(0.2), 'minecraft:glass_pane')
-    
+    //event.recipes.create.pressing(Item.of('kubejs:glass_sheet').withChance(0.2), 'minecraft:glass_pane')
+
     //Sequenced Crafting Recipes
     event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:display_pannel')
