@@ -1,0 +1,11 @@
+StartupEvents.registry('item', event => {
+	event.create('screen_controller').displayName('Screen Controller').texture('kubejs:item/pcb')
+	event.create('media_rx').displayName('Media RX').texture('kubejs:item/pcb')
+	event.create('incomplete_media_rx','create:sequenced_assembly').displayName('Incomplete Media RX').texture('kubejs:item/incomplete_pcb')
+	event.create('incomplete_screen_controller','create:sequenced_assembly').displayName('Incomplete Screen Controller').texture('kubejs:item/incomplete_pcb')
+	event.create('incomplete_screen_frame','create:sequenced_assembly').displayName('Incomplete Screen Frame').texture('kubejs:item/incomplete_screen_frame')
+	event.create('screen_frame').displayName('Screen Frame').texture('kubejs:item/screen_frame')
+    event.create('display_pannel').displayName('Display Pannel').texture('kubejs:item/display_pannel')
+    event.create('incomplete_display_pannel','create:sequenced_assembly').displayName('Incomplete Display Pannel').texture('kubejs:item/screen_frame')
+	event.create('glass_sheet').displayName('Glass Sheet').texture('kubejs:item/glass_sheet')
+})
