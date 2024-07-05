@@ -17,12 +17,15 @@ ServerEvents.recipes(event => {
     //bronze alloy
     event.recipes.create.mixing('3x mekanism:ingot_bronze', ['mekanism:ingot_tin', 'minecraft:copper_ingot', 'minecraft:copper_ingot',]).heated()
 
-    //Pressing Recipe
+    //Pressing Recipes
 
+    //Glass Sheet
     event.recipes.create.pressing([Item.of('kubejs:glass_sheet').withChance(0.25), 'kubejs:broken_glass'], 'minecraft:glass_pane')
 
+    //Deploying Recipes
 
-
+    //Screen Frame
+    event.recipes.create.deploying([Item.of('kubejs:screen_frame').withChance(0.75), 'kubejs:broken_glass'], 'minecraft:incomplete_screen_frame')
 
     //Sequenced Crafting Recipes
     event.recipes.create.sequenced_assembly([
