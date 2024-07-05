@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
     //Deploying Recipes
 
     //Screen Frame
-    event.recipes.create.deploying('kubejs:screen_frame', ['minecraft:incomplete_screen_frame', 'minecraft:glass_pane'])
+    event.recipes.create.deploying('kubejs:screen_frame', ['minecraft:incomplete_screen_frame', 'kubejs:glass_sheet'])
 
     //Sequenced Crafting Recipes
     event.recipes.create.sequenced_assembly([
