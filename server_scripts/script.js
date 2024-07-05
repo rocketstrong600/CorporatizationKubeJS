@@ -25,4 +25,16 @@ ServerEvents.recipes(event => {
 		event.recipes.createPressing('kubejs:incomplete_display_pannel', 'kubejs:incomplete_display_pannel'),
         event.recipes.createDeploying('kubejs:display_pannel', ['kubejs:incomplete_display_pannel', 'kubejs:screen_controller']),
 	]).transitionalItem('kubejs:incomplete_display_pannel').loops(1)
+
+    event.recipes.create.sequenced_assembly([
+		Item.of('kubejs:screen_controller')
+	],'create:copper_sheet',[
+		event.recipes.createDeploying('kubejs:incomplete_screen_controller',['kubejs:incomplete_screen_controller','create:electron_tube']),
+		event.recipes.createDeploying('kubejs:incomplete_screen_controller',['kubejs:incomplete_screen_controller','create:electron_tube']),
+        event.recipes.createDeploying('kubejs:incomplete_screen_controller',['kubejs:incomplete_screen_controller','createaddition:gold_wire']),
+        event.recipes.createDeploying('kubejs:incomplete_screen_controller',['kubejs:incomplete_screen_controller','createaddition:capacitor']),
+        event.recipes.createDeploying('kubejs:incomplete_screen_controller',['kubejs:incomplete_screen_controller','minecraft:quartz']),
+        event.recipes.createDeploying('kubejs:screen_controller',['kubejs:incomplete_screen_controller','kubejs:media_rx']),
+
+	]).transitionalItem('kubejs:incomplete_screen_controller').loops(1)
 });
