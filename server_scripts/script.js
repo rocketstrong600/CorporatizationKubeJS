@@ -16,7 +16,8 @@ ServerEvents.recipes(event => {
 
     //bronze alloy
     event.recipes.create.mixing('3x mekanism:ingot_bronze', ['mekanism:ingot_tin', 'minecraft:copper_ingot', 'minecraft:copper_ingot',]).heated()
-
+    
+    //Sequenced Crafting Recipes
     event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:display_pannel')
 	],'kubejs:screen_frame',[
@@ -37,4 +38,14 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying('kubejs:screen_controller',['kubejs:incomplete_screen_controller','kubejs:media_rx']),
 
 	]).transitionalItem('kubejs:incomplete_screen_controller').loops(1)
+
+    event.recipes.create.sequenced_assembly([
+		Item.of('kubejs:media_rx')
+	],'create:copper_sheet',[
+		event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','create:electron_tube']),
+		event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','minecraft:lightning_rod']),
+        event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','minecraft:ender_pearl']),
+        event.recipes.createDeploying('kubejs:media_rx',['kubejs:incomplete_media_rx','createaddition:gold_wire']),
+
+	]).transitionalItem('kubejs:incomplete_media_rx').loops(1)
 });
