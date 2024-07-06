@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
             'GDG'
         ],
         {
-            G: 'create:gold_sheet',
+            G: 'create:golden_sheet',
             B: 'create:brass_casing',
             M: 'kubejs:advanced_motherboard',
             D: 'kubejs:display_pannel'
