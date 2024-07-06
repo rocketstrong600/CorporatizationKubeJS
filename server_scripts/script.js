@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
         'SGZGS',
         ], {
         S: 'create:iron_sheet',
-        C: 'create:cog_wheel',
+        C: 'create:cogwheel',
         P: 'create:propeller',
         X: 'computercraft:computer_normal',
         Z: 'minecraft:chest',
@@ -78,7 +78,7 @@ ServerEvents.recipes(event => {
         'SGZGS',
         ], {
         S: 'create:brass_sheet',
-        C: 'create:cog_wheel',
+        C: 'create:cogwheel',
         P: 'create:propeller',
         X: 'computercraft:computer_advanced',
         Z: 'minecraft:chest',
