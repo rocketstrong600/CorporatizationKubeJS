@@ -107,7 +107,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_display_pannel',['kubejs:incomplete_display_pannel','minecraft:slime_ball']),
 		event.recipes.createDeploying('kubejs:incomplete_display_pannel',['kubejs:incomplete_display_pannel','minecraft:glowstone_dust']),
 		event.recipes.createPressing('kubejs:incomplete_display_pannel', 'kubejs:incomplete_display_pannel'),
-        event.recipes.createDeploying('kubejs:display_pannel', ['kubejs:incomplete_display_pannel', 'kubejs:screen_controller']),
+        event.recipes.createDeploying('kubejs:incomplete_display_pannel', ['kubejs:incomplete_display_pannel', 'kubejs:screen_controller']),
 	]).transitionalItem('kubejs:incomplete_display_pannel').loops(1)
 
     event.recipes.create.sequenced_assembly([
@@ -117,7 +117,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_screen_controller',['kubejs:incomplete_screen_controller','create:electron_tube']),
         event.recipes.createDeploying('kubejs:incomplete_screen_controller',['kubejs:incomplete_screen_controller','createaddition:gold_wire']),
         event.recipes.createDeploying('kubejs:incomplete_screen_controller',['kubejs:incomplete_screen_controller','createaddition:capacitor']),
-        event.recipes.createDeploying('kubejs:screen_controller',['kubejs:incomplete_screen_controller','minecraft:quartz']),
+        event.recipes.createDeploying('kubejs:incomplete_screen_controller',['kubejs:incomplete_screen_controller','minecraft:quartz']),
 	]).transitionalItem('kubejs:incomplete_screen_controller').loops(1)
 
     event.recipes.create.sequenced_assembly([
@@ -127,6 +127,6 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','create:electron_tube']),
 		event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','minecraft:lightning_rod']),
         event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','createaddition:gold_wire']),
-        event.recipes.createDeploying('kubejs:media_rx',['kubejs:incomplete_media_rx','mekanism:advanced_control_circuit']),
+        event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','mekanism:advanced_control_circuit']),
 	]).transitionalItem('kubejs:incomplete_media_rx').loops(1)
 });
