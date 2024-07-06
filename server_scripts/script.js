@@ -2,6 +2,8 @@ ServerEvents.recipes(event => {
     //Remove Recipes 
     event.remove({ output: 'computercraft:computer_advanced' })
     event.remove({ output: 'computercraft:computer_normal' })
+    event.remove({ id: 'computercraft:turtle_normal' })
+    event.remove({ id: 'computercraft:turtle_advanced' })
 
     //Shaped Recipes
 
