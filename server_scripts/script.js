@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:display_pannel')
 	],'kubejs:screen_frame',[
-		event.recipes.createDeployinge('kubejs:incomplete_display_pannel',['kubejs:incomplete_display_pannel','minecraft:slime_ball']),
+		event.recipes.createDeploying('kubejs:incomplete_display_pannel',['kubejs:incomplete_display_pannel','minecraft:slime_ball']),
 		event.recipes.createDeploying('kubejs:incomplete_display_pannel',['kubejs:incomplete_display_pannel','minecraft:glowstone_dust']),
 		event.recipes.createPressing('kubejs:incomplete_display_pannel', 'kubejs:incomplete_display_pannel'),
         event.recipes.createDeploying('kubejs:incomplete_display_pannel', ['kubejs:incomplete_display_pannel', 'kubejs:screen_controller']),
@@ -128,7 +128,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','minecraft:lightning_rod']),
         event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','createaddition:gold_wire']),
         event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','mekanism:advanced_control_circuit']),
-	]).transitionalItem('kubejs:incomplete_media_rx').loops(1)
+	]).transitionalItem('kubejs:incomplete_media_rx').loops(2)
 
     event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:basic_motherboard')
@@ -137,7 +137,7 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','createaddition:gold_wire']),
         event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','createaddition:capacitor']),
         event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','mekanism:basic_control_circuit'])
-	]).transitionalItem('kubejs:incomplete_basic_motherboard').loops(1)
+	]).transitionalItem('kubejs:incomplete_basic_motherboard').loops(2)
 
     event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:advanced_motherboard')
