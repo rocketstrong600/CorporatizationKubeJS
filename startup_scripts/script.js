@@ -1,6 +1,6 @@
 StartupEvents.registry('item', event => {
 	event.create('screen_controller').displayName('Screen Controller').texture('kubejs:item/pcb')
-	event.create('media_rx').displayName('Media RX').texture('kubejs:item/pcb')
+	event.create('media_rx').displayName('Media RX').texture('kubejs:item/pcb_rx')
 	event.create('incomplete_media_rx','create:sequenced_assembly').displayName('Incomplete Media RX').texture('kubejs:item/incomplete_pcb')
 	event.create('incomplete_screen_controller','create:sequenced_assembly').displayName('Incomplete Screen Controller').texture('kubejs:item/incomplete_pcb')
 	event.create('incomplete_screen_frame').displayName('Incomplete Screen Frame').texture('kubejs:item/incomplete_screen_frame')
@@ -10,10 +10,10 @@ StartupEvents.registry('item', event => {
 	event.create('glass_sheet').displayName('Glass Sheet').texture('kubejs:item/glass_sheet')
 	event.create('broken_glass').displayName('Broken Glass').texture('kubejs:item/broken_glass')
 
-	event.create('basic_motherboard').displayName('Basic Motherboard').texture('kubejs:item/motherboard')
-	event.create('advanced_motherboard').displayName('Advanced Motherboard').texture('kubejs:item/motherboard')
-	event.create('elite_motherboard').displayName('Elite Motherboard').texture('kubejs:item/motherboard')
-	event.create('ultimate_motherboard').displayName('Ultimate Motherboard').texture('kubejs:item/motherboard')
+	event.create('basic_motherboard').displayName('Basic Motherboard').texture('kubejs:item/basic_motherboard')
+	event.create('advanced_motherboard').displayName('Advanced Motherboard').texture('kubejs:item/advanced_motherboard')
+	event.create('elite_motherboard').displayName('Elite Motherboard').texture('kubejs:item/elite_motherboard')
+	event.create('ultimate_motherboard').displayName('Ultimate Motherboard').texture('kubejs:item/ultimate_motherboard')
 
 	event.create('incomplete_basic_motherboard','create:sequenced_assembly').displayName('Incomplete Basic Motherboard').texture('kubejs:item/incomplete_motherboard')
 	event.create('incomplete_advanced_motherboard','create:sequenced_assembly').displayName('Incomplete Advanced Motherboard').texture('kubejs:item/incomplete_motherboard')

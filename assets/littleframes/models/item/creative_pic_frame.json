@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "kubejs:item/display_pannel"
+        "layer0": "kubejs:item/media_display_panel"
     }
 }
