@@ -4,6 +4,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'computercraft:computer_normal' })
     event.remove({ id: 'computercraft:turtle_normal' })
     event.remove({ id: 'computercraft:turtle_advanced' })
+    event.remove({ id: 'computercraft:turtle_advanced_upgrade' })
 
     //Shaped Recipes
 
@@ -58,6 +59,30 @@ ServerEvents.recipes(event => {
         ' SSS ',
         ], {
         S: 'create:brass_sheet',
+    })
+
+    event.recipes.create.mechanical_crafting('computercraft:turtle_normal', [
+        'SCXPS',
+        'SGZGS',
+        ], {
+        S: 'create:iron_sheet',
+        C: 'create:cog_wheel',
+        P: 'create:propeller',
+        X: 'computercraft:computer_normal',
+        Z: 'minecraft:chest',
+        G: 'minecraft:slime_ball'
+    })
+
+    event.recipes.create.mechanical_crafting('computercraft:turtle_advanced', [
+        'SCXPS',
+        'SGZGS',
+        ], {
+        S: 'create:brass_sheet',
+        C: 'create:cog_wheel',
+        P: 'create:propeller',
+        X: 'computercraft:computer_advanced',
+        Z: 'minecraft:chest',
+        G: 'minecraft:slime_ball'
     })
 
     //Mixing Recipes
