@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','minecraft:ender_pearl']),
 		event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','create:electron_tube']),
 		event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','minecraft:lightning_rod']),
-        event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','mekanism:advanced_control_circuit']),
-        event.recipes.createDeploying('kubejs:media_rx',['kubejs:incomplete_media_rx','createaddition:gold_wire']),
+        event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','createaddition:gold_wire']),
+        event.recipes.createDeploying('kubejs:media_rx',['kubejs:incomplete_media_rx','mekanism:advanced_control_circuit']),
 	]).transitionalItem('kubejs:incomplete_media_rx').loops(1)
 });
