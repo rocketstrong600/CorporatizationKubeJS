@@ -2,8 +2,8 @@ ServerEvents.recipes(event => {
     //Remove Recipes 
     event.remove({ output: 'computercraft:computer_advanced' })
     event.remove({ output: 'computercraft:computer_normal' })
-    event.remove({ output: 'computercraft:pocket_computer_advanced' })
-    event.remove({ output: 'computercraft:pocket_computer_normal' })
+    //event.remove({ output: 'computercraft:pocket_computer_advanced' })
+    //event.remove({ output: 'computercraft:pocket_computer_normal' })
     event.remove({ id: 'computercraft:turtle_normal' })
     event.remove({ id: 'computercraft:turtle_advanced' })
     event.remove({ id: 'computercraft:turtle_advanced_upgrade' })
@@ -98,8 +98,8 @@ ServerEvents.recipes(event => {
     event.recipes.create.pressing([Item.of('kubejs:glass_sheet').withChance(0.25), 'kubejs:broken_glass'], 'minecraft:glass_pane')
 
     //Pocket Computer
-    event.recipes.create.pressing('computercraft:pocket_computer_normal', 'minecraft:computer_normal')
-    event.recipes.create.pressing('computercraft:pocket_computer_advanced', 'minecraft:computer_advanced')
+    event.recipes.create.pressing('computercraft:pocket_computer_normal', 'computercraft:computer_normal')
+    event.recipes.create.pressing('computercraft:pocket_computer_advanced', 'computercraft:computer_advanced')
 
 
     //Deploying Recipes
