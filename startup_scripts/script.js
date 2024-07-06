@@ -1,8 +1,7 @@
 StartupEvents.registry('item', event => {
 	event.create('screen_controller').displayName('Screen Controller').texture('kubejs:item/pcb')
 	event.create('media_rx').displayName('Media RX').texture('kubejs:item/pcb_rx')
-	event.create('incomplete_media_rx','create:sequenced_assembly').displayName('Incomplete Media RX').texture('kubejs:item/incomplete_pcb')
-	event.create('incomplete_screen_controller','create:sequenced_assembly').displayName('Incomplete Screen Controller').texture('kubejs:item/incomplete_pcb')
+	event.create('incomplete_pcb','create:sequenced_assembly').displayName('Incomplete PCB').texture('kubejs:item/incomplete_pcb')
 	event.create('incomplete_screen_frame').displayName('Incomplete Screen Frame').texture('kubejs:item/incomplete_screen_frame')
 	event.create('screen_frame').displayName('Screen Frame').texture('kubejs:item/screen_frame')
     event.create('display_pannel').displayName('Display Pannel').texture('kubejs:item/display_pannel')
@@ -15,8 +14,5 @@ StartupEvents.registry('item', event => {
 	event.create('elite_motherboard').displayName('Elite Motherboard').texture('kubejs:item/elite_motherboard')
 	event.create('ultimate_motherboard').displayName('Ultimate Motherboard').texture('kubejs:item/ultimate_motherboard')
 
-	event.create('incomplete_basic_motherboard','create:sequenced_assembly').displayName('Incomplete Basic Motherboard').texture('kubejs:item/incomplete_motherboard')
-	event.create('incomplete_advanced_motherboard','create:sequenced_assembly').displayName('Incomplete Advanced Motherboard').texture('kubejs:item/incomplete_motherboard')
-	event.create('incomplete_elite_motherboard','create:sequenced_assembly').displayName('Incomplete Elite Motherboard').texture('kubejs:item/incomplete_motherboard')
-	event.create('incomplete_ultimate_motherboard','create:sequenced_assembly').displayName('Incomplete Ultimate Motherboard').texture('kubejs:item/incomplete_motherboard')
+	event.create('incomplete_motherboard','create:sequenced_assembly').displayName('Incomplete Motherboard').texture('kubejs:item/incomplete_motherboard')
 })

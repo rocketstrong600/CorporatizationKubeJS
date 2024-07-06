@@ -113,40 +113,40 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:screen_controller')
 	],'create:copper_sheet',[
-		event.recipes.createDeploying('kubejs:incomplete_screen_controller',['kubejs:incomplete_screen_controller','create:electron_tube']),
-		event.recipes.createDeploying('kubejs:incomplete_screen_controller',['kubejs:incomplete_screen_controller','create:electron_tube']),
-        event.recipes.createDeploying('kubejs:incomplete_screen_controller',['kubejs:incomplete_screen_controller','createaddition:gold_wire']),
-        event.recipes.createDeploying('kubejs:incomplete_screen_controller',['kubejs:incomplete_screen_controller','createaddition:capacitor']),
-        event.recipes.createDeploying('kubejs:incomplete_screen_controller',['kubejs:incomplete_screen_controller','minecraft:quartz']),
-	]).transitionalItem('kubejs:incomplete_screen_controller').loops(1)
+		event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','create:electron_tube']),
+		event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','create:electron_tube']),
+        event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','createaddition:gold_wire']),
+        event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','createaddition:capacitor']),
+        event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','minecraft:quartz']),
+	]).transitionalItem('kubejs:incomplete_pcb').loops(1)
 
     event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:media_rx')
 	],'create:copper_sheet',[
-        event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','minecraft:ender_pearl']),
-		event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','create:electron_tube']),
-		event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','minecraft:lightning_rod']),
-        event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','createaddition:gold_wire']),
-        event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','mekanism:advanced_control_circuit']),
-	]).transitionalItem('kubejs:incomplete_media_rx').loops(1)
+        event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','minecraft:ender_pearl']),
+		event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','create:electron_tube']),
+		event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','minecraft:lightning_rod']),
+        event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','createaddition:gold_wire']),
+        event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','mekanism:advanced_control_circuit']),
+	]).transitionalItem('kubejs:incomplete_pcb').loops(1)
 
     event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:basic_motherboard')
 	],'create:copper_sheet',[
-		event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','mekanism:basic_control_circuit']),
-		event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','create:electron_tube']),
-        event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','createaddition:gold_wire']),
-        event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','createaddition:capacitor']),
-	]).transitionalItem('kubejs:incomplete_basic_motherboard').loops(2)
+		event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','mekanism:basic_control_circuit']),
+		event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','create:electron_tube']),
+        event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','createaddition:gold_wire']),
+        event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','createaddition:capacitor']),
+	]).transitionalItem('kubejs:incomplete_motherboard').loops(2)
 
     event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:advanced_motherboard')
 	],'create:copper_sheet',[
-		event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','mekanism:advanced_control_circuit']),
-		event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','create:electron_tube']),
-        event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','createaddition:gold_wire']),
-        event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','createaddition:capacitor']),
-	]).transitionalItem('kubejs:incomplete_basic_motherboard').loops(2)
+		event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','mekanism:advanced_control_circuit']),
+		event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','create:electron_tube']),
+        event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','createaddition:gold_wire']),
+        event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','createaddition:capacitor']),
+	]).transitionalItem('kubejs:incomplete_motherboard').loops(2)
 
 
 });
