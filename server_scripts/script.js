@@ -1,4 +1,7 @@
 ServerEvents.recipes(event => {
+    //Remove Recipes 
+    event.remove({ output: 'computercraft:computer_advanced' })
+    event.remove({ output: 'computercraft:computer_normal' })
 
     // Mechanical Crafting Recipes
 
