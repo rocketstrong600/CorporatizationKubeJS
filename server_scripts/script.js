@@ -5,10 +5,11 @@ ServerEvents.recipes(event => {
     //creative picture frame
     event.recipes.create.mechanical_crafting('littleframes:creative_pic_frame', [
         ' GDG ',
-        ' GGG ',
+        ' GMG ',
         ], {
         G: 'create:golden_sheet',
-        D: 'kubejs:display_pannel'
+        D: 'kubejs:display_pannel',
+        M: 'kubejs:media_rx'
     })
 
     //incomplete screen frame
@@ -52,9 +53,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_screen_controller',['kubejs:incomplete_screen_controller','create:electron_tube']),
         event.recipes.createDeploying('kubejs:incomplete_screen_controller',['kubejs:incomplete_screen_controller','createaddition:gold_wire']),
         event.recipes.createDeploying('kubejs:incomplete_screen_controller',['kubejs:incomplete_screen_controller','createaddition:capacitor']),
-        event.recipes.createDeploying('kubejs:incomplete_screen_controller',['kubejs:incomplete_screen_controller','minecraft:quartz']),
-        event.recipes.createDeploying('kubejs:screen_controller',['kubejs:incomplete_screen_controller','kubejs:media_rx']),
-
+        event.recipes.createDeploying('kubejs:screen_controller',['kubejs:incomplete_screen_controller','minecraft:quartz']),
 	]).transitionalItem('kubejs:incomplete_screen_controller').loops(1)
 
     event.recipes.create.sequenced_assembly([
@@ -63,7 +62,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','create:electron_tube']),
 		event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','minecraft:lightning_rod']),
         event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','minecraft:ender_pearl']),
+        event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','mekanism:advanced_control_circuit']),
         event.recipes.createDeploying('kubejs:media_rx',['kubejs:incomplete_media_rx','createaddition:gold_wire']),
-
 	]).transitionalItem('kubejs:incomplete_media_rx').loops(1)
 });
