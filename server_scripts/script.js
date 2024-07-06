@@ -1,9 +1,11 @@
 ServerEvents.recipes(event => {
     //Remove Recipes 
-    event.remove({ output: 'computercraft:computer_advanced' })
-    event.remove({ output: 'computercraft:computer_normal' })
-    //event.remove({ output: 'computercraft:pocket_computer_advanced' })
-    //event.remove({ output: 'computercraft:pocket_computer_normal' })
+    event.remove({ id: 'computercraft:computer_advanced' })
+    event.remove({ ic: 'computercraft:computer_normal' })
+    event.remove({ ic: 'computercraft:computer_advanced_upgrade' })
+    event.remove({ id: 'computercraft:pocket_computer_normal' })
+    event.remove({ id: 'computercraft:pocket_computer_advanced' })
+    event.remove({ id: 'computercraft:pocket_computer_advanced_upgrade' })
     event.remove({ id: 'computercraft:turtle_normal' })
     event.remove({ id: 'computercraft:turtle_advanced' })
     event.remove({ id: 'computercraft:turtle_advanced_upgrade' })
