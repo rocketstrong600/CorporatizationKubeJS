@@ -3,6 +3,40 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'computercraft:computer_advanced' })
     event.remove({ output: 'computercraft:computer_normal' })
 
+    //Shaped Recipes
+
+    //Computer Normal
+    event.shaped(
+        Item.of('computercraft:computer_normal', 1), // arg 1: output
+        [
+            'IAI',
+            'AMA', // arg 2: the shape (array of strings)
+            'IDI'
+        ],
+        {
+            I: 'create:iron_sheet',
+            A: 'create:andesite_casing',
+            M: 'kubejs:basic_motherboard',
+            D: 'kubejs:display_pannel'
+        }
+    )
+
+    //Computer Advanced
+    event.shaped(
+        Item.of('computercraft:computer_advanced', 1), // arg 1: output
+        [
+            'GBG',
+            'BMB', // arg 2: the shape (array of strings)
+            'GDG'
+        ],
+        {
+            G: 'create:gold_sheet',
+            B: 'create:brass_casing',
+            M: 'kubejs:advanced_motherboard',
+            D: 'kubejs:display_pannel'
+        }
+    )
+
     // Mechanical Crafting Recipes
 
     //creative picture frame
