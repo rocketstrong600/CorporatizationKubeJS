@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
-    //Remove Recipes 
+    //Remove Recipes
+    /*
     event.remove({ id: 'computercraft:computer_advanced' })
     event.remove({ ic: 'computercraft:computer_normal' })
     event.remove({ ic: 'computercraft:computer_advanced_upgrade' })
@@ -9,7 +10,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'computercraft:turtle_normal' })
     event.remove({ id: 'computercraft:turtle_advanced' })
     event.remove({ id: 'computercraft:turtle_advanced_upgrade' })
-
+    */
     //Shaped Recipes
 
     //Computer Normal
@@ -40,6 +41,38 @@ ServerEvents.recipes(event => {
             G: 'create:golden_sheet',
             B: 'create:brass_casing',
             M: 'kubejs:advanced_motherboard',
+            D: 'kubejs:display_pannel'
+        }
+    )
+
+    //Screen Normal
+    event.shaped(
+        Item.of('computercraft:monitor_normal', 1), // arg 1: output
+        [
+            'IAI',
+            'AEA', // arg 2: the shape (array of strings)
+            'IDI'
+        ],
+        {
+            I: 'create:iron_sheet',
+            A: 'create:andesite_casing',
+            E: 'create:electron_tube',
+            D: 'kubejs:display_pannel'
+        }
+    )
+
+    //Screen Advanced
+    event.shaped(
+        Item.of('computercraft:monitor_advanced', 1), // arg 1: output
+        [
+            'GBG',
+            'BEB', // arg 2: the shape (array of strings)
+            'GDG'
+        ],
+        {
+            G: 'create:golden_sheet',
+            B: 'create:brass_casing',
+            E: 'create:electron_tube',
             D: 'kubejs:display_pannel'
         }
     )
