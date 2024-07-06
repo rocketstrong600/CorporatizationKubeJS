@@ -128,7 +128,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','minecraft:lightning_rod']),
         event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','createaddition:gold_wire']),
         event.recipes.createDeploying('kubejs:incomplete_media_rx',['kubejs:incomplete_media_rx','mekanism:advanced_control_circuit']),
-	]).transitionalItem('kubejs:incomplete_media_rx').loops(2)
+	]).transitionalItem('kubejs:incomplete_media_rx').loops(1)
 
     event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:basic_motherboard')
@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','createaddition:gold_wire']),
         event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','createaddition:capacitor']),
         event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','mekanism:advanced_control_circuit'])
-	]).transitionalItem('kubejs:incomplete_basic_motherboard').loops(1)
+	]).transitionalItem('kubejs:incomplete_basic_motherboard').loops(2)
 
 
 });
