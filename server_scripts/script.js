@@ -133,20 +133,20 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:basic_motherboard')
 	],'create:copper_sheet',[
-		event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','mekanism:basic_control_circuit']),
 		event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','create:electron_tube']),
         event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','createaddition:gold_wire']),
         event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','createaddition:capacitor']),
-	]).transitionalItem('kubejs:incomplete_basic_motherboard').loops(2)
+        event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','mekanism:basic_control_circuit'])
+	]).transitionalItem('kubejs:incomplete_basic_motherboard').loops(1)
 
     event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:advanced_motherboard')
 	],'create:copper_sheet',[
-		event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','mekanism:advanced_control_circuit']),
 		event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','create:electron_tube']),
         event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','createaddition:gold_wire']),
         event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','createaddition:capacitor']),
-	]).transitionalItem('kubejs:incomplete_basic_motherboard').loops(2)
+        event.recipes.createDeploying('kubejs:incomplete_basic_motherboard',['kubejs:incomplete_basic_motherboard','mekanism:advanced_control_circuit'])
+	]).transitionalItem('kubejs:incomplete_basic_motherboard').loops(1)
 
 
 });
