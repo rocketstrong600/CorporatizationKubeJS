@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "#cgm:fragile_windows",
+    "#cgm:fragile_sails",
+    "#cgm:fragile_lights",
+    "#cgm:fragile_glass_casings",
+    "create:fluid_pipe",
+    "create:framed_glass_door",
+    "create:framed_glass_trapdoor",
+    "design_decor:cardboard_box",
+    "vs_clockwork:flap",
+    "vs_clockwork:wing"
+  ]
+}

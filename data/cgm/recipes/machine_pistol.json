@@ -1,0 +1,28 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 1,
+      "tag": "forge:stripped_logs"
+    },
+    {
+      "count": 2,
+      "item": "create:andesite_alloy"
+    },
+    {
+      "count": 3,
+      "item": "create:sturdy_sheet"
+    },
+    {
+      "count": 1,
+      "item": "create:iron_sheet"
+    },
+    {
+      "count": 1,
+      "item": "minecraft:lever"
+    }
+  ],
+  "result": {
+    "item": "cgm:machine_pistol"
+  }
+}

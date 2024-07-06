@@ -1,0 +1,31 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "L": {
+      "tag": "forge:stripped_logs"
+    },
+    "S": {
+      "item": "create:sturdy_sheet"
+    },
+    "B": {
+      "item": "create:brass_sheet"
+    },
+    "R": {
+      "item": "create:analog_lever"
+    },
+    "C": {
+      "item": "create:cogwheel"
+    },
+    "K": {
+      "item": "cgm:tactical_stock"
+    }
+  },
+  "pattern": [
+    "SSSSR  ",
+    "  BBCLK"
+  ],
+  "result": {
+    "item": "cgm:assault_rifle"
+  }
+}

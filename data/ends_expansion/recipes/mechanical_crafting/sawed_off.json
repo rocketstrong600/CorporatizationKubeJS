@@ -1,0 +1,57 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "S": {
+      "item": "create:sturdy_sheet"
+    },
+    "L": {
+      "tag": "forge:stripped_logs"
+    },
+    "C": {
+      "item": "create:cogwheel"
+    },
+    "B": {
+      "item": "create:brass_sheet"
+    },
+    "R": {
+      "item": "minecraft:lever"
+    }
+  },
+  "pattern": [
+    "SSBR",
+    "SSBR",
+    "LCBL"
+  ],
+  "result": {
+    "item": "cgm:shotgun",
+    "nbt": {
+      "display": {
+        "Name": "{\"text\":\"Sawed-off Shotgun\",\"italic\":false}"
+      },
+      "Model": {
+        "Count":1,
+        "id":"create:brass_hand",
+        "tag":{"CustomModelData":2}
+      },
+      "Gun": {
+        "General": {
+          "MaxAmmo": 2,
+          "Spread": 70.0
+        },
+        "Modules": {
+          "Attachments": {
+            "Stock": {
+              "YOffset": 3.6506,
+              "ZOffset": 8.4
+            }
+          }
+        },
+        "Projectile": {
+          "Damage": 19.0,
+          "Life": 0.5
+        }
+      }
+    }
+  }
+}

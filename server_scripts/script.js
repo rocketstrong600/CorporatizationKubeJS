@@ -4,7 +4,6 @@ ServerEvents.recipes(event => {
 
     //creative picture frame
     event.recipes.create.mechanical_crafting('littleframes:creative_pic_frame', [
-        '     ',
         ' GDG ',
         ' GGG ',
         ], {

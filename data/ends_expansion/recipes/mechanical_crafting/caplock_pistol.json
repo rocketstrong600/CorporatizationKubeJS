@@ -1,0 +1,53 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "L": {
+      "tag": "forge:stripped_logs"
+    },
+    "S": {
+      "item": "create:sturdy_sheet"
+    },
+    "B": {
+      "item": "create:brass_sheet"
+    },
+    "R": {
+      "item": "minecraft:lever"
+    },
+    "C": {
+      "item": "create:cogwheel"
+    }
+  },
+  "pattern": [
+    "SSBR",
+    "SSCL"
+  ],
+  "result": {
+    "item": "cgm:pistol",
+    "nbt": {
+      "display": {
+        "Name": "{\"text\":\"Caplock Pistol\",\"italic\":false}"
+      },
+      "Model": {
+        "Count":1,
+        "id":"create:brass_hand",
+        "tag":{"CustomModelData":1}
+      },
+      "Gun": {
+        "General": {
+          "MaxAmmo": 2,
+          "Rate": 8,
+          "Spread": 3.0
+        },
+        "Modules": {
+          "Attachments": {
+            "Barrel": {}
+          }
+        },
+        "Projectile": {
+          "Damage": 9.0
+        }
+      }
+    }
+  }
+}

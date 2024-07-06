@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "minecraft:tnt"
+    }
+  ],
+  "results": [
+    {
+     "count": 4,
+      "item": "cgm:grenade"
+    }
+  ]
+}

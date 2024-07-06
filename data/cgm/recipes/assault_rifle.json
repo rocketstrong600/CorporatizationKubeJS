@@ -1,0 +1,32 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 1,
+      "tag": "forge:stripped_logs"
+    },
+    {
+      "count": 2,
+      "item": "create:brass_sheet"
+    },
+    {
+      "count": 4,
+      "item": "create:sturdy_sheet"
+    },
+    {
+      "count": 1,
+      "item": "create:cogwheel"
+    },
+    {
+      "count": 1,
+      "item": "create:analog_lever"
+    },
+    {
+      "count": 1,
+      "item": "cgm:tactical_stock"
+    }
+  ],
+  "result": {
+    "item": "cgm:assault_rifle"
+  }
+}

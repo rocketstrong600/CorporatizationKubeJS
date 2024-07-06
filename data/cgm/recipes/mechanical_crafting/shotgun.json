@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "S": {
+      "item": "create:sturdy_sheet"
+    },
+    "L": {
+      "tag": "forge:stripped_logs"
+    },
+    "C": {
+      "item": "create:cogwheel"
+    },
+    "B": {
+      "item": "create:brass_sheet"
+    },
+    "R": {
+      "item": "minecraft:lever"
+    }
+  },
+  "pattern": [
+    "SSSSBR",
+    "SSSSBR",
+    "  LCBL"
+  ],
+  "result": {
+    "item": "cgm:shotgun"
+  }
+}

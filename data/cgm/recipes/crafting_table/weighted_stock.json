@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cgm:tactical_stock"
+    },
+    {
+      "tag": "forge:stripped_logs"
+    },
+    {
+      "item": "create:brass_sheet"
+    }
+  ],
+  "result": {
+    "item": "cgm:weighted_stock"
+  }
+}

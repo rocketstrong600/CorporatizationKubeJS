@@ -1,0 +1,28 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "L": {
+      "tag": "forge:stripped_logs"
+    },
+    "S": {
+      "item": "create:sturdy_sheet"
+    },
+    "T": {
+      "item": "create:shaft"
+    },
+    "R": {
+      "item": "minecraft:lever"
+    },
+    "A": {
+      "item": "create:andesite_alloy"
+    }
+  },
+  "pattern": [
+    "SSSR",
+    "ATL "
+  ],
+  "result": {
+    "item": "cgm:grenade_launcher"
+  }
+}

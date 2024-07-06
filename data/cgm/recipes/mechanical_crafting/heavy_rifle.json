@@ -1,0 +1,31 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "L": {
+      "tag": "forge:stripped_logs"
+    },
+    "S": {
+      "item": "create:sturdy_sheet"
+    },
+    "R": {
+      "item": "minecraft:lever"
+    },
+    "A": {
+      "item": "create:analog_lever"
+    },
+    "B": {
+      "item": "create:brass_sheet"
+    },
+    "C": {
+      "item": "create:cogwheel"
+    }
+  },
+  "pattern": [
+    "SSSSSSBR",
+    "    CABL"
+  ],
+  "result": {
+    "item": "cgm:heavy_rifle"
+  }
+}

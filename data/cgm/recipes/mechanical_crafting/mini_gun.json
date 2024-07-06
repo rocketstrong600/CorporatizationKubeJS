@@ -1,0 +1,30 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "S": {
+      "item": "create:sturdy_sheet"
+    },
+    "D": {
+      "item": "minecraft:dropper"
+    },
+    "B": {
+      "item": "create:brass_block"
+    },
+    "T": {
+      "item": "create:brass_sheet"
+    },
+    "H": {
+      "item": "create:hand_crank"
+    }
+  },
+  "pattern": [
+    " SSSSSSH ",
+    "TSSSSSSDB",
+    "TSSSSSSTS",
+    " SSSSSSS "
+  ],
+  "result": {
+    "item": "cgm:mini_gun"
+  }
+}

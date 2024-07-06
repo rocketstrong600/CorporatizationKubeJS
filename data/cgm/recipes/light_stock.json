@@ -1,0 +1,16 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 2,
+      "item": "create:iron_sheet"
+    },
+    {
+      "count": 3,
+      "item": "create:andesite_alloy"
+    }
+  ],
+  "result": {
+    "item": "cgm:light_stock"
+  }
+}

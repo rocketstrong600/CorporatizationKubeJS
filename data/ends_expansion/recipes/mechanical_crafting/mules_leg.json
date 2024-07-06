@@ -1,0 +1,70 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "L": {
+      "tag": "forge:stripped_logs"
+    },
+    "S": {
+      "item": "create:sturdy_sheet"
+    },
+    "B": {
+      "item": "create:brass_sheet"
+    },
+    "R": {
+      "item": "create:analog_lever"
+    },
+    "C": {
+      "item": "create:cogwheel"
+    }
+  },
+  "pattern": [
+    "SSSR ",
+    "LBBCL"
+  ],
+  "result": {
+    "item": "cgm:pistol",
+    "nbt": {
+      "display": {
+        "Name": "{\"text\":\"Mule's Leg\",\"italic\":false}"
+      },
+      "Model": {
+        "Count":1,
+        "id":"create:brass_hand",
+        "tag":{"CustomModelData":3}
+      },
+      "Gun": {
+        "General": {
+          "GripType": "cgm:one_handed",
+          "MaxAmmo": 6,
+          "Rate": 12,
+          "recoilAngle": 12.0,
+          "recoilKick": 2.5,
+          "Spread": 20.0
+        },
+        "Modules": {
+          "Attachments": {
+            "Barrel": {},
+            "Stock": {},
+            "UnderBarrel": {
+              "Scale": 0.999,
+              "YOffset": 1.5,
+              "ZOffset": 0.0
+            }
+          }
+        },
+        "Projectile": {
+          "Item": "cgm:advanced_bullet",
+          "Damage": 9.0
+        },
+        "Sounds": {
+          "Cock": "cgm:item.rifle.cock",
+          "EnchantedFire": "cgm:item.rifle.enchanted_fire",
+          "Fire": "cgm:item.rifle.fire",
+          "Reload": "cgm:item.pistol.reload",
+          "SilencedFire": "cgm:item.rifle.silenced_fire"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 2,
+      "tag": "forge:stripped_logs"
+    },
+    {
+      "count": 3,
+      "item": "create:brass_sheet"
+    },
+    {
+      "count": 4,
+      "item": "create:sturdy_sheet"
+    },
+    {
+      "count": 1,
+      "item": "create:cogwheel"
+    },
+    {
+      "count": 2,
+      "item": "minecraft:lever"
+    }
+  ],
+  "result": {
+    "item": "cgm:shotgun",
+    "nbt": {
+      "display": {
+        "Name": "{\"text\":\"Sawed-Off Shotgun\",\"italic\":false}"
+      },
+      "Model": {
+        "Count":1,
+        "id":"create:brass_hand",
+        "tag":{"CustomModelData":2}
+      },
+      "Gun": {
+        "General": {
+          "MaxAmmo": 2,
+          "Spread": 20.0
+        },
+        "Modules": {
+          "Attachments": {
+            "Stock": {
+              "YOffset": 3.6506,
+              "ZOffset": 8.4
+            }
+          }
+        },
+        "Projectile": {
+          "Damage": 20.0,
+          "Life": 0.5
+        }
+      }
+    }
+  }
+}

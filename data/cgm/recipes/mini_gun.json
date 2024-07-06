@@ -1,0 +1,28 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 1,
+      "item": "create:brass_block"
+    },
+    {
+      "count": 1,
+      "item": "minecraft:dropper"
+    },
+    {
+      "count": 26,
+      "item": "create:sturdy_sheet"
+    },
+    {
+      "count": 3,
+      "item": "create:brass_sheet"
+    },
+    {
+      "count": 1,
+      "item": "create:hand_crank"
+    }
+  ],
+  "result": {
+    "item": "cgm:mini_gun"
+  }
+}

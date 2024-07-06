@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "I": {
+      "tag": "forge:plates/iron"
+    },
+    "G": {
+      "item": "minecraft:gunpowder"
+    },
+    "K": {
+      "item": "minecraft:dried_kelp"
+    },
+    "B": {
+      "tag": "forge:nuggets/brass"
+    },
+    "R": {
+      "tag": "forge:dusts/redstone"
+    }
+  },
+  "pattern": [
+    "I",
+    "G",
+    "K",
+    "B",
+    "R"
+  ],
+  "result": {
+    "count": 6,
+    "item": "cgm:shell"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 1,
+      "tag": "forge:stripped_logs"
+    },
+    {
+      "count": 1,
+      "item": "create:brass_sheet"
+    }
+  ],
+  "result": {
+    "item": "cgm:tactical_stock"
+  }
+}

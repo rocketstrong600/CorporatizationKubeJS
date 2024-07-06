@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "S": {
+      "item": "create:sturdy_sheet"
+    },
+    "L": {
+      "tag": "forge:stripped_logs"
+    },
+    "B": {
+      "item": "create:brass_sheet"
+    },
+    "R": {
+      "item": "minecraft:lever"
+    },
+    "T": {
+      "item": "create:shaft"
+    },
+    "A": {
+      "item": "create:andesite_alloy"
+    }
+  },
+  "pattern": [
+    "    BB",
+    "SSSSTA",
+    "  LLRL"
+  ],
+  "result": {
+    "item": "cgm:rifle"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 2,
+      "item": "minecraft:iron_block"
+    },
+    {
+      "count": 1,
+      "tag": "minecraft:planks"
+    },
+    {
+      "count": 1,
+      "tag": "minecraft:wool"
+    },
+    {
+      "count": 1,
+      "item": "minecraft:dispenser"
+    },
+    {
+      "count": 1,
+      "item": "minecraft:flint_and_steel"
+    },
+    {
+      "count": 1,
+      "item": "create:hand_crank"
+    }
+  ],
+  "result": {
+    "item": "cgm:bazooka"
+  }
+}

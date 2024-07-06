@@ -1,0 +1,28 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "C": {
+      "tag": "forge:nuggets/copper"
+    },
+    "G": {
+      "item": "minecraft:gunpowder"
+    },
+    "B": {
+      "tag": "forge:nuggets/brass"
+    },
+    "R": {
+      "tag": "forge:dusts/redstone"
+    }
+  },
+  "pattern": [
+    "C",
+    "G",
+    "B",
+    "R"
+  ],
+  "result": {
+    "count": 4,
+    "item": "cgm:basic_bullet"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "create:item/brass_hand"
+  },
+    "overrides": [
+        {"predicate": {  "custom_model_data": 1  },"model": "ends_expansion:item/caplock_pistol" },
+        {"predicate": {  "custom_model_data": 2  },"model": "ends_expansion:item/sawed_off" },
+        {"predicate": {  "custom_model_data": 3  },"model": "ends_expansion:item/mules_leg" }
+    ]
+}

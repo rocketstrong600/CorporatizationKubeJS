@@ -1,0 +1,28 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 2,
+      "tag": "forge:stripped_logs"
+    },
+    {
+      "count": 3,
+      "item": "create:brass_sheet"
+    },
+    {
+      "count": 8,
+      "item": "create:sturdy_sheet"
+    },
+    {
+      "count": 1,
+      "item": "create:cogwheel"
+    },
+    {
+      "count": 2,
+      "item": "minecraft:lever"
+    }
+  ],
+  "result": {
+    "item": "cgm:shotgun"
+  }
+}
