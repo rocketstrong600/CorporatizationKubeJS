@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.pressing([Item.of('kubejs:glass_sheet').withChance(0.25), 'kubejs:broken_glass'], 'minecraft:glass_pane')
 
     //Pocket Computer
-    event.recipes.create.pressing('computercraft:pocket_computer', 'minecraft:computer_normal')
+    event.recipes.create.pressing('computercraft:pocket_computer_normal', 'minecraft:computer_normal')
     event.recipes.create.pressing('computercraft:pocket_computer_advanced', 'minecraft:computer_advanced')
 
 
