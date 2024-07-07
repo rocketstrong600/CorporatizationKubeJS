@@ -14,6 +14,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'create:crafting/materials/rose_quartz' })
     event.remove({ output: 'morered:red_alloy_ingot' })
     event.remove({ output: 'morered:red_alloy_wire'})
+    event.remove({ mod: 'jumbofurnace'})
     //Shaped Recipes
 
     //Computer Normal
@@ -133,9 +134,6 @@ ServerEvents.recipes(event => {
     //Destabalized Redstone
     event.recipes.create.mixing([Fluid.of('thermal:redstone', 100)], ['minecraft:redstone']).heated()
 
-    //Destabalized Redstone
-    event.recipes.create.mixing([Fluid.of('thermal:redstone', 100)], ['minecraft:redstone']).heated()
-
     //Red Alloy Ingot
     event.recipes.create.mixing('morered:red_alloy_ingot', [Fluid.of('thermal:redstone', 200), 'minecraft:copper']).heated()
 
@@ -170,11 +168,11 @@ ServerEvents.recipes(event => {
     event.custom({
         type: "createaddition:rolling",
         input: {
-          ltem: "morered:red_alloy_ingot"
+            ltem: "morered:red_alloy_ingot"
         },
         result: {
-          item: "morered:red_alloy_wire",
-          count: 2
+            item: "morered:red_alloy_wire",
+            count: 2
         }
     })
 
