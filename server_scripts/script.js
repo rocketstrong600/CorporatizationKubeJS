@@ -258,3 +258,7 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
 
 });
+
+ServerEvents.afterRecipes(event => {
+    event.remove({ type: 'jumbofurnace:jumbo_smelting'})
+});
