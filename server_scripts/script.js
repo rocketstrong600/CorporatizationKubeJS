@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing([Fluid.of('thermal:redstone', 100)], ['minecraft:redstone']).heated()
 
     //Red Alloy Ingot
-    event.recipes.create.mixing('morered:red_alloy_ingot', [Fluid.of('thermal:redstone', 200), 'minecraft:copper']).heated()
+    event.recipes.create.mixing('morered:red_alloy_ingot', [Fluid.of('thermal:redstone', 200), 'minecraft:copper_ingot']).heated()
 
     //Pressing Recipes
 
