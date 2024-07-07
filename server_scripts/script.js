@@ -153,8 +153,8 @@ ServerEvents.recipes(event => {
     event.recipes.create.deploying('kubejs:screen_frame', ['kubejs:incomplete_screen_frame', 'kubejs:glass_sheet'])
 
     //Electron Tube
-    event.recipes.create.deploying('create:electron_tube', ['create:polished_rose_quartz', 'minecraft:iron_sheet'])
-    event.recipes.create.deploying('create:electron_tube', ['minecraft:iron_sheet', 'create:polished_rose_quartz'])
+    event.recipes.create.deploying('create:electron_tube', ['create:polished_rose_quartz', 'create:iron_sheet'])
+    event.recipes.create.deploying('create:electron_tube', ['create:iron_sheet', 'create:polished_rose_quartz'])
 
     //Filling Recipes
 
