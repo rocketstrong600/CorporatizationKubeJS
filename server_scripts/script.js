@@ -12,8 +12,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'computercraft:monitor_advanced' })
     event.remove({ id: 'computercraft:monitor_normal' })
     event.remove({ id: 'create:crafting/materials/rose_quartz' })
-    event.remove({ id: 'morered:red_alloy_ingot_from_jumbo_smelting' })
-    event.remove({ id: 'morered:red_alloy_wire'})
+    event.remove({ output: 'morered:red_alloy_ingot' })
+    event.remove({ output: 'morered:red_alloy_wire'})
     //Shaped Recipes
 
     //Computer Normal
@@ -133,6 +133,12 @@ ServerEvents.recipes(event => {
     //Destabalized Redstone
     event.recipes.create.mixing([Fluid.of('thermal:redstone', 100)], ['minecraft:redstone']).heated()
 
+    //Destabalized Redstone
+    event.recipes.create.mixing([Fluid.of('thermal:redstone', 100)], ['minecraft:redstone']).heated()
+
+    //Red Alloy Ingot
+    event.recipes.create.mixing('morered:red_alloy_ingot', [Fluid.of('thermal:redstone', 200), 'minecraft:copper']).heated()
+
     //Pressing Recipes
 
     //Glass Sheet
@@ -157,13 +163,11 @@ ServerEvents.recipes(event => {
     //Rose Quartz
     event.recipes.create.filling('create:rose_quartz', [Fluid.of('thermal:redstone', 50), 'minecraft:quartz'])
 
-    //Red Alloy Ingot
-    event.recipes.create.filling('morered:red_alloy_ingot', [Fluid.of('thermal:redstone', 200), 'minecraft:copper'])
 
     //Rolling Recipes
 
     // red alloy wire
-    event.custom({
+    event.recipes.custom({
         type: "createaddition:rolling",
         input: {
           ltem: "morered:red_alloy_ingot"
