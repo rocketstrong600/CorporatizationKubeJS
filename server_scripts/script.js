@@ -140,7 +140,7 @@ ServerEvents.recipes(event => {
     //Compacting Recipes
 
     //Stabalise Redstone
-    event.recipes.create.compacting(['minecraft:redstone'], [Fluid.of('thermal:redstone', 100)])
+    event.recipes.create.compacting(['minecraft:redstone_block'], [Fluid.of('thermal:redstone', 900)])
 
     //Pressing Recipes
 
