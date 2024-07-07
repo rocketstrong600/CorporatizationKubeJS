@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'create:crafting/materials/rose_quartz' })
     event.remove({ output: 'morered:red_alloy_ingot' })
     event.remove({ output: 'morered:red_alloy_wire'})
-    event.remove({ mod: 'jumbofurnace'})
+    event.remove({ type: 'jumbofurnace:jumbo_smelting'})
     //Shaped Recipes
 
     //Computer Normal
