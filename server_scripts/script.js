@@ -11,6 +11,9 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'computercraft:turtle_advanced_upgrade' })
     event.remove({ id: 'computercraft:monitor_advanced' })
     event.remove({ id: 'computercraft:monitor_normal' })
+    event.remove({ id: 'create:crafting/materials/rose_quartz' })
+    event.remove({ id: 'morered:red_alloy_ingot_from_jumbo_smelting' })
+    event.remove({ id: 'morered:red_alloy_wire'})
     //Shaped Recipes
 
     //Computer Normal
@@ -127,6 +130,9 @@ ServerEvents.recipes(event => {
     //bronze alloy
     event.recipes.create.mixing('3x mekanism:ingot_bronze', ['mekanism:ingot_tin', 'minecraft:copper_ingot', 'minecraft:copper_ingot',]).heated()
 
+    //Destabalized Redstone
+    event.recipes.create.mixing([Fluid.of('thermal:redstone', 100)], ['minecraft:redstone']).heated()
+
     //Pressing Recipes
 
     //Glass Sheet
@@ -141,6 +147,32 @@ ServerEvents.recipes(event => {
 
     //Screen Frame
     event.recipes.create.deploying('kubejs:screen_frame', ['kubejs:incomplete_screen_frame', 'kubejs:glass_sheet'])
+
+    //Electron Tube
+    event.recipes.create.deploying('create:electron_tube', ['create:polished_rose_quartz', 'minecraft:iron_sheet'])
+    event.recipes.create.deploying('create:electron_tube', ['minecraft:iron_sheet', 'create:polished_rose_quartz'])
+
+    //Filling Recipes
+
+    //Rose Quartz
+    event.recipes.create.filling('create:rose_quartz', [Fluid.of('thermal:redstone', 50), 'minecraft:quartz'])
+
+    //Red Alloy Ingot
+    event.recipes.create.filling('morered:red_alloy_ingot', [Fluid.of('thermal:redstone', 200), 'minecraft:copper'])
+
+    //Rolling Recipes
+
+    // red alloy wire
+    event.custom({
+        type: "createaddition:rolling",
+        input: {
+          tag: "morered:red_alloy_ingot"
+        },
+        result: {
+          item: "morered:red_alloy_wire",
+          count: 2
+        }
+    })
 
     //Sequenced Crafting Recipes
     event.recipes.create.sequenced_assembly([
@@ -208,5 +240,13 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','createaddition:capacitor']),
 	]).transitionalItem('kubejs:incomplete_motherboard').loops(2)
 
+    event.recipes.create.sequenced_assembly([
+		Item.of('kubejs:ultimate_motherboard')
+	],'create:copper_sheet',[
+		event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','mekanism:ultimate_control_circuit']),
+		event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','create:electron_tube']),
+        event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','createaddition:gold_wire']),
+        event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','createaddition:capacitor']),
+	]).transitionalItem('kubejs:incomplete_motherboard').loops(2)
 
 });
