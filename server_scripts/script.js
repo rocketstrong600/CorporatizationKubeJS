@@ -166,7 +166,7 @@ ServerEvents.recipes(event => {
     event.custom({
         type: "createaddition:rolling",
         input: {
-          tag: "morered:red_alloy_ingot"
+          ltem: "morered:red_alloy_ingot"
         },
         result: {
           item: "morered:red_alloy_wire",
