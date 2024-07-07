@@ -142,6 +142,9 @@ ServerEvents.recipes(event => {
     //Stabalise Redstone
     event.recipes.create.compacting(['minecraft:redstone_block'], [Fluid.of('thermal:redstone', 900)])
 
+    //Recycle Broken Glass
+    event.recipes.create.compacting('3x kubejs:broken_glass', 'minecraft:glass')
+
     //Pressing Recipes
 
     //Glass Sheet
@@ -165,6 +168,9 @@ ServerEvents.recipes(event => {
 
     //Rose Quartz
     event.recipes.create.filling('create:rose_quartz', [Fluid.of('thermal:redstone', 50), 'minecraft:quartz'])
+
+    //Milling Recipes
+    event.recipes.create.milling('9x minecraft:redstone', 'minecraft:redstone_block')
 
 
     //Rolling Recipes
