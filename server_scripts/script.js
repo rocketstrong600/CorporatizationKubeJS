@@ -168,7 +168,7 @@ ServerEvents.recipes(event => {
     event.custom({
         type: "createaddition:rolling",
         input: {
-            ltem: "morered:red_alloy_ingot"
+            tag: "forge:ingots/redstone_alloy"
         },
         result: {
             item: "morered:red_alloy_wire",
@@ -250,5 +250,9 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','createaddition:gold_wire']),
         event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','createaddition:capacitor']),
 	]).transitionalItem('kubejs:incomplete_motherboard').loops(2)
+
+});
+
+ServerEvents.recipes(event => {
 
 });
