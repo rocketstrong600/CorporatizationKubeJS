@@ -167,7 +167,7 @@ ServerEvents.recipes(event => {
     //Rolling Recipes
 
     // red alloy wire
-    event.recipes.custom({
+    event.custom({
         type: "createaddition:rolling",
         input: {
           ltem: "morered:red_alloy_ingot"
