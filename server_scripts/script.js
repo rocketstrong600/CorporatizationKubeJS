@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.compacting(['minecraft:redstone_block'], [Fluid.of('thermal:redstone', 900)])
 
     //Recycle Broken Glass
-    event.recipes.create.compacting('3x kubejs:broken_glass', 'minecraft:glass')
+    event.recipes.create.compacting('minecraft:glass', '3x kubejs:broken_glass').heated()
 
     //Pressing Recipes
 
