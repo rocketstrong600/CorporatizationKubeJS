@@ -15,8 +15,13 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'projectred_core:red_ingot' })
     event.remove({ output: 'projectred_transmission:red_alloy_wire'})
     event.remove({ type: 'jumbofurnace:jumbo_smelting'})
-    //Shaped Recipes
+    event.remove({ id: 'walkietalkie:wooden_walkietalkie'})
+    event.remove({ id: 'walkietalkie:stone_walkietalkie'})
+    event.remove({ id: 'walkietalkie:iron_walkietalkie'})
+    event.remove({ id: 'walkietalkie:diamond_walkietalkie'})
+    event.remove({ id: 'walkietalkie:netherite_walkietalkie'})
 
+    //Shaped Recipes
     //Computer Normal
     event.shaped(
         Item.of('computercraft:computer_normal', 1), // arg 1: output
@@ -252,6 +257,24 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','createaddition:gold_wire']),
         event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','createaddition:capacitor']),
 	]).transitionalItem('kubejs:incomplete_motherboard').loops(2)
+
+    event.recipes.create.sequenced_assembly([
+		Item.of('walkietalkie:netherite_walkietalkie')
+	],'create:iron_sheet',[
+		event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','kubejs:media_rx']),
+		event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','create:electron_tube']),
+        event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','createaddition:gold_wire']),
+        event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','createaddition:capacitor']),
+	]).transitionalItem('kubejs:incomplete_motherboard').loops(1)
+
+    event.recipes.create.sequenced_assembly([
+		Item.of('walkietalkie:iron_walkietalkie')
+	],'create:iron_sheet',[
+		event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','minecraft:lightning_rod']),
+		event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','create:electron_tube']),
+        event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','createaddition:gold_wire']),
+        event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','createaddition:capacitor']),
+	]).transitionalItem('kubejs:incomplete_motherboard').loops(1)
 
 });
 
