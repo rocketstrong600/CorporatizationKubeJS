@@ -12,8 +12,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'computercraft:monitor_advanced' })
     event.remove({ id: 'computercraft:monitor_normal' })
     event.remove({ id: 'create:crafting/materials/rose_quartz' })
-    event.remove({ output: 'morered:red_alloy_ingot' })
-    event.remove({ output: 'morered:red_alloy_wire'})
+    event.remove({ output: 'projectred_core:red_ingot' })
+    event.remove({ output: 'projectred_transmission:red_alloy_wire'})
     event.remove({ type: 'jumbofurnace:jumbo_smelting'})
     //Shaped Recipes
 
@@ -129,13 +129,13 @@ ServerEvents.recipes(event => {
     //Mixing Recipes
 
     //bronze alloy
-    event.recipes.create.mixing('3x mekanism:ingot_bronze', ['mekanism:ingot_tin', 'minecraft:copper_ingot', 'minecraft:copper_ingot',]).heated()
+    event.recipes.create.mixing('3x mekanism:ingot_bronze', ['mekanism:ingot_tin', 'minecraft:copper_ingot', 'minecraft:copper_ingot']).heated()
 
     //Destabalized Redstone
     event.recipes.create.mixing([Fluid.of('thermal:redstone', 100)], ['minecraft:redstone']).heated()
 
     //Red Alloy Ingot
-    event.recipes.create.mixing('morered:red_alloy_ingot', [Fluid.of('thermal:redstone', 200), 'minecraft:copper_ingot']).heated()
+    event.recipes.create.mixing('projectred_core:red_ingot', [Fluid.of('thermal:redstone', 200), 'minecraft:copper_ingot']).heated()
 
     //Compacting Recipes
 
@@ -179,10 +179,10 @@ ServerEvents.recipes(event => {
     event.custom({
         type: "createaddition:rolling",
         input: {
-            tag: "forge:ingots/redstone_alloy"
+            tag: "forge:ingots/red_alloy"
         },
         result: {
-            item: "morered:red_alloy_wire",
+            item: "projectred_transmission:red_alloy_wire",
             count: 2
         }
     })
@@ -252,10 +252,6 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','createaddition:gold_wire']),
         event.recipes.createDeploying('kubejs:incomplete_motherboard',['kubejs:incomplete_motherboard','createaddition:capacitor']),
 	]).transitionalItem('kubejs:incomplete_motherboard').loops(2)
-
-});
-
-ServerEvents.recipes(event => {
 
 });
 
