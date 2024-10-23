@@ -18,9 +18,14 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'walkietalkie:wooden_walkietalkie'})
     event.remove({ id: 'walkietalkie:stone_walkietalkie'})
     event.remove({ id: 'walkietalkie:iron_walkietalkie'})
+    event.remove({ id: 'walkietalkie:golden_walkietalkie'})
     event.remove({ id: 'walkietalkie:diamond_walkietalkie'})
     event.remove({ id: 'walkietalkie:netherite_walkietalkie'})
-
+    event.remove({ id: 'sophisticatedbackpacks:gold_backpack'})
+    event.remove({ id: 'sophisticatedbackpacks:diamond_backpack'})
+    event.remove({ id: 'sophisticatedbackpacks:netherite_backpack'})
+    event.remove({ id: 'mekanism:basic_control_circuit'})
+    
     //Shaped Recipes
     //Computer Normal
     event.shaped(
@@ -84,6 +89,26 @@ ServerEvents.recipes(event => {
             E: 'create:electron_tube',
             D: 'kubejs:display_pannel'
         }
+    )
+
+    // Shapeless Recipes
+
+    //Industrial_iron
+    event.shapeless(
+      Item.of('createdeco:industrial_iron_ingot', 2),
+      [
+        'createbigcannons:cast_iron_ingot',
+        'createbigcannons:cast_iron_ingot',
+      ]
+    )
+    
+    //Cast_Iron
+    event.shapeless(
+      Item.of('createbigcannons:cast_iron_ingot', 2),
+      [
+        'createdeco:industrial_iron_ingot',
+        'createdeco:industrial_iron_ingot',
+      ]
     )
 
     // Mechanical Crafting Recipes
@@ -159,6 +184,9 @@ ServerEvents.recipes(event => {
     event.recipes.create.pressing('computercraft:pocket_computer_normal', 'computercraft:computer_normal')
     event.recipes.create.pressing('computercraft:pocket_computer_advanced', 'computercraft:computer_advanced')
 
+    //Netherite Plate
+    event.recipes.create.pressing('thermal:netherite_plate', 'minecraft:netherite_ingot')
+
 
     //Deploying Recipes
 
@@ -168,6 +196,11 @@ ServerEvents.recipes(event => {
     //Electron Tube
     event.recipes.create.deploying('create:electron_tube', ['create:polished_rose_quartz', 'create:iron_sheet'])
     event.recipes.create.deploying('create:electron_tube', ['create:iron_sheet', 'create:polished_rose_quartz'])
+    
+    //Control Circuites
+    event.recipes.create.deploying('mekanism:advanced_control_circuit', ['mekanism:basic_control_circuit', 'mekanism:alloy_infused'])
+    event.recipes.create.deploying('mekanism:elite_control_circuit', ['mekanism:advanced_control_circuit', 'mekanism:alloy_reinforced'])
+    event.recipes.create.deploying('mekanism:ultimate_control_circuit', ['mekanism:elite_control_circuit', 'mekanism:alloy_atomic'])
 
     //Filling Recipes
 
@@ -193,6 +226,17 @@ ServerEvents.recipes(event => {
     })
 
     //Sequenced Crafting Recipes
+
+	event.recipes.createSequencedAssembly([
+		Item.of('mekanism:basic_control_circuit',5)
+	],'projectred_core:silicon',[
+		event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','create:copper_nugget']),
+		event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','minecraft:gold_nugget']),
+		event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','minecraft:redstone']),
+		event.recipes.create.filling('kubejs:incomplete_pcb',[Fluid.of('thermal:redstone', 50), 'kubejs:incomplete_pcb']),
+        event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','farmersdelight:diamond_knife']).keepHeldItem()
+	]).transitionalItem('kubejs:incomplete_pcb').loops(1)
+
     event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:display_pannel')
 	],'kubejs:screen_frame',[
@@ -260,6 +304,15 @@ ServerEvents.recipes(event => {
 
     event.recipes.create.sequenced_assembly([
 		Item.of('walkietalkie:netherite_walkietalkie')
+	],'thermal:netherite_plate',[
+		event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','kubejs:media_rx']),
+		event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','create:electron_tube']),
+        event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','createaddition:gold_wire']),
+        event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','createaddition:capacitor']),
+	]).transitionalItem('kubejs:incomplete_motherboard').loops(1)
+
+    event.recipes.create.sequenced_assembly([
+		Item.of('walkietalkie:diamond_walkietalkie')
 	],'create:iron_sheet',[
 		event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','kubejs:media_rx']),
 		event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','create:electron_tube']),
@@ -268,11 +321,20 @@ ServerEvents.recipes(event => {
 	]).transitionalItem('kubejs:incomplete_motherboard').loops(1)
 
     event.recipes.create.sequenced_assembly([
-		Item.of('walkietalkie:iron_walkietalkie')
+		Item.of('walkietalkie:golden_walkietalkie')
 	],'create:iron_sheet',[
-		event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','minecraft:lightning_rod']),
+		event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','createaddition:copper_wire']),
 		event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','create:electron_tube']),
         event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','createaddition:gold_wire']),
+        event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','createaddition:capacitor']),
+	]).transitionalItem('kubejs:incomplete_motherboard').loops(1)
+
+    event.recipes.create.sequenced_assembly([
+		Item.of('walkietalkie:iron_walkietalkie')
+	],'create:iron_sheet',[
+		event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','createaddition:copper_wire']),
+		event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','create:electron_tube']),
+        event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','createaddition:iron_wire']),
         event.recipes.createDeploying('kubejs:incomplete_pcb',['kubejs:incomplete_pcb','createaddition:capacitor']),
 	]).transitionalItem('kubejs:incomplete_motherboard').loops(1)
 
