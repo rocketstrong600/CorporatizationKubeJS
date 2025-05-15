@@ -26,7 +26,258 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'sophisticatedbackpacks:netherite_backpack'})
     event.remove({ id: 'mekanism:basic_control_circuit'})
     
+    event.remove({ id: 'projectred_transmission:white_insulated_wire'})    
+    event.remove({ id: 'projectred_transmission:orange_insulated_wire'})
+    event.remove({ id: 'projectred_transmission:magenta_insulated_wire'})
+    event.remove({ id: 'projectred_transmission:light_blue_insulated_wire'})
+    event.remove({ id: 'projectred_transmission:yellow_insulated_wire'})
+    event.remove({ id: 'projectred_transmission:lime_insulated_wire'})
+    event.remove({ id: 'projectred_transmission:pink_insulated_wire'})
+    event.remove({ id: 'projectred_transmission:gray_insulated_wire'})
+    event.remove({ id: 'projectred_transmission:light_gray_insulated_wire'})
+    event.remove({ id: 'projectred_transmission:cyan_insulated_wire'})
+    event.remove({ id: 'projectred_transmission:purple_insulated_wire'})
+    event.remove({ id: 'projectred_transmission:blue_insulated_wire'})
+    event.remove({ id: 'projectred_transmission:brown_insulated_wire'})
+    event.remove({ id: 'projectred_transmission:green_insulated_wire'})
+    event.remove({ id: 'projectred_transmission:red_insulated_wire'})
+    event.remove({ id: 'projectred_transmission:black_insulated_wire'})
+
+    event.remove({ id: 'projectred_core:motor'})
+    
     //Shaped Recipes
+
+
+
+
+    
+    //Insulated Wire
+    event.shaped(
+        Item.of('projectred_transmission:white_insulated_wire', 1), // arg 1: output
+        [
+            ' W ',
+            ' R ', // arg 2: the shape (array of strings)
+            '   '
+        ],
+        {
+            W: 'minecraft:white_wool',            
+            R: "projectred_transmission:red_alloy_wire",
+        }
+    )
+
+    event.shaped(
+        Item.of('projectred_transmission:orange_insulated_wire', 1), // arg 1: output
+        [
+            ' W ',
+            ' R ', // arg 2: the shape (array of strings)
+            '   '
+        ],
+        {
+            W: 'minecraft:orange_wool',            
+            R: "projectred_transmission:red_alloy_wire",
+        }
+    )
+    
+    event.shaped(
+        Item.of('projectred_transmission:magenta_insulated_wire', 1), // arg 1: output
+        [
+            ' W ',
+            ' R ', // arg 2: the shape (array of strings)
+            '   '
+        ],
+        {
+            W: 'minecraft:magenta_wool',            
+            R: "projectred_transmission:red_alloy_wire",
+        }
+    )
+    
+    event.shaped(
+        Item.of('projectred_transmission:light_blue_insulated_wire', 1), // arg 1: output
+        [
+            ' W ',
+            ' R ', // arg 2: the shape (array of strings)
+            '   '
+        ],
+        {
+            W: 'minecraft:light_blue_wool',            
+            R: "projectred_transmission:red_alloy_wire",
+        }
+    )
+
+    
+    event.shaped(
+        Item.of('projectred_transmission:yellow_insulated_wire', 1), // arg 1: output
+        [
+            ' W ',
+            ' R ', // arg 2: the shape (array of strings)
+            '   '
+        ],
+        {
+            W: 'minecraft:yellow_wool',            
+            R: "projectred_transmission:red_alloy_wire",
+        }
+    )
+
+    event.shaped(
+        Item.of('projectred_transmission:lime_insulated_wire', 1), // arg 1: output
+        [
+            ' W ',
+            ' R ', // arg 2: the shape (array of strings)
+            '   '
+        ],
+        {
+            W: 'minecraft:lime_wool',            
+            R: "projectred_transmission:red_alloy_wire",
+        }
+    )
+    
+    event.shaped(
+        Item.of('projectred_transmission:pink_insulated_wire', 1), // arg 1: output
+        [
+            ' W ',
+            ' R ', // arg 2: the shape (array of strings)
+            '   '
+        ],
+        {
+            W: 'minecraft:pink_wool',            
+            R: "projectred_transmission:red_alloy_wire",
+        }
+    )
+    
+    event.shaped(
+        Item.of('projectred_transmission:gray_insulated_wire', 1), // arg 1: output
+        [
+            ' W ',
+            ' R ', // arg 2: the shape (array of strings)
+            '   '
+        ],
+        {
+            W: 'minecraft:gray_wool',            
+            R: "projectred_transmission:red_alloy_wire",
+        }
+    )
+    
+    event.shaped(
+        Item.of('projectred_transmission:light_gray_insulated_wire', 1), // arg 1: output
+        [
+            ' W ',
+            ' R ', // arg 2: the shape (array of strings)
+            '   '
+        ],
+        {
+            W: 'minecraft:light_gray_wool',            
+            R: "projectred_transmission:red_alloy_wire",
+        }
+    )
+
+    
+    event.shaped(
+        Item.of('projectred_transmission:cyan_insulated_wire', 1), // arg 1: output
+        [
+            ' W ',
+            ' R ', // arg 2: the shape (array of strings)
+            '   '
+        ],
+        {
+            W: 'minecraft:cyan_wool',            
+            R: "projectred_transmission:red_alloy_wire",
+        }
+    )
+    
+    event.shaped(
+        Item.of('projectred_transmission:purple_insulated_wire', 1), // arg 1: output
+        [
+            ' W ',
+            ' R ', // arg 2: the shape (array of strings)
+            '   '
+        ],
+        {
+            W: 'minecraft:purple_wool',            
+            R: "projectred_transmission:red_alloy_wire",
+        }
+    )
+    
+    event.shaped(
+        Item.of('projectred_transmission:blue_insulated_wire', 1), // arg 1: output
+        [
+            ' W ',
+            ' R ', // arg 2: the shape (array of strings)
+            '   '
+        ],
+        {
+            W: 'minecraft:blue_wool',            
+            R: "projectred_transmission:red_alloy_wire",
+        }
+    )
+
+    event.shaped(
+        Item.of('projectred_transmission:brown_insulated_wire', 1), // arg 1: output
+        [
+            ' W ',
+            ' R ', // arg 2: the shape (array of strings)
+            '   '
+        ],
+        {
+            W: 'minecraft:brown_wool',            
+            R: "projectred_transmission:red_alloy_wire",
+        }
+    )
+
+    event.shaped(
+        Item.of('projectred_transmission:green_insulated_wire', 1), // arg 1: output
+        [
+            ' W ',
+            ' R ', // arg 2: the shape (array of strings)
+            '   '
+        ],
+        {
+            W: 'minecraft:green_wool',            
+            R: "projectred_transmission:red_alloy_wire",
+        }
+    )
+
+    event.shaped(
+        Item.of('projectred_transmission:red_insulated_wire', 1), // arg 1: output
+        [
+            ' W ',
+            ' R ', // arg 2: the shape (array of strings)
+            '   '
+        ],
+        {
+            W: 'minecraft:red_wool',            
+            R: "projectred_transmission:red_alloy_wire",
+        }
+    )
+
+    event.shaped(
+        Item.of('projectred_transmission:black_insulated_wire', 1), // arg 1: output
+        [
+            ' W ',
+            ' R ', // arg 2: the shape (array of strings)
+            '   '
+        ],
+        {
+            W: 'minecraft:black_wool',            
+            R: "projectred_transmission:red_alloy_wire",
+        }
+    )
+    
+    //Motor   
+    event.shaped(
+        Item.of('projectred_core:motor', 1), // arg 1: output
+        [
+            ' I ',
+            'SCS', // arg 2: the shape (array of strings)
+            'RCR'
+        ],
+        {
+            I: '#forge:rods/iron',            
+            R: 'minecraft:redstone',
+            C: 'createaddition:copper_spool',
+            S: '#forge:stone',
+        }
+    )
+    
     //Computer Normal
     event.shaped(
         Item.of('computercraft:computer_normal', 1), // arg 1: output
@@ -221,7 +472,7 @@ ServerEvents.recipes(event => {
         },
         result: {
             item: "projectred_transmission:red_alloy_wire",
-            count: 2
+            count: 4
         }
     })
 
